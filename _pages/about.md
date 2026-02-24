@@ -2,33 +2,45 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Biomechanics & Sports Engineering | Adaptive Sports
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: prof_pic.jpg # assets/img/ 폴더에 프로필 사진을 넣고 파일명을 여기에 적으세요
+  image_circular: false # true로 바꾸면 원형으로 잘립니다
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Kyung Hee University</p>
+    <p>South Korea</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: false # true로 바꾸면 선택한 논문이 메인 페이지에 표시됩니다
+social: true # 하단에 소셜 아이콘 표시
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: false # true로 바꾸면 _news 폴더의 뉴스가 표시됩니다
+  scrollable: true
+  limit: 5
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false # true로 바꾸면 블로그 최신 글이 표시됩니다
+  scrollable: true
+  limit: 3
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a researcher majoring in **Biomechanics and Sports Engineering**, with a passion for **Adaptive Sports (장애인스포츠)**. My research involves analyzing human movement data, processing biomechanical signals, and applying machine learning techniques to sports engineering.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+## Education
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+- **M.S. in Physical Education (Biomechanics)** — Kyung Hee University (Graduated Feb 2019)
+- **B.S. in Sports Coaching** — Kyung Hee University (Graduated Feb 2017, GPA: 3.8/4.5)
+
+## Experience
+
+- **Chief Researcher**, Sports Engineering Lab, Kyung Hee University (Feb 2019 – Present)
+  - Biomechanical data extraction, processing, and analysis
+  - Application of Machine Learning & Deep Learning for sports analytics
+- **Research Assistant** (2017 – 2019)
+  - Gait analysis, motion capture, and functional assessment projects
+
+## Activities
+
+- *(여기에 대외활동, 동아리, 기타 경험을 추가하세요)*
