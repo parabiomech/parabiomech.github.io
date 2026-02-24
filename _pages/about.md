@@ -30,16 +30,21 @@ I am a researcher majoring in **Biomechanics and Sports Engineering**, with a pa
 
 ## Education
 
-- **M.S. in Physical Education (Biomechanics)** — Kyung Hee University (Graduated Feb 2019)
-- **B.S. in Sports Coaching** — Kyung Hee University (Graduated Feb 2017, GPA: 3.8/4.5)
+- **M.S. in Sports Engineering Convergence** — Kookmin University (Graduated Feb 2017)
+- **B.S. in Adapted Physical Education** —  Youngin University (Graduated Feb 2015)
 
 ## Experience
 
-- **Chief Researcher**, Sports Engineering Lab, Kyung Hee University (Feb 2019 – Present)
+- **Research Assistant**, Sports Biomechanics & Sports Engineering Lab, Kookmin University (2020 – 2022)
   - Biomechanical data extraction, processing, and analysis
-  - Application of Machine Learning & Deep Learning for sports analytics
-- **Research Assistant** (2017 – 2019)
-  - Gait analysis, motion capture, and functional assessment projects
+  - Motion capture, and functional assessment projects
+  - Sports-IT convergence projects
+
+- **Researcher**, Sports Biomechanics & Performance Analysis Team, Sports Science Research Center, Korea Institute of Sport Science (2023 – 2026)
+  - Paralympic high performance athletes' performance analysis and prediction
+  - Para-sports biomechanical analysis
+  - Para-sports technology development and support
+
 
 ## Activities
 
