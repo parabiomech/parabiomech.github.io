@@ -1,0 +1,377 @@
+{
+  "basics": {
+    "name": "Haeryun Jung",
+    "label": "Biomechanics & Sports Engineering Researcher",
+    "image": "",
+    "email": "parabiomech@gmail.com",
+    "phone": "(+82) 010-9149-9158",
+    "summary": "Researcher specializing in Biomechanics and Sports Engineering with a focus on Adaptive Sports. Experienced in analyzing human movement data, processing biomechanical signals, and applying machine learning techniques to sports engineering.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Seoul",
+      "countryCode": "KR",
+      "region": "South Korea"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "parabiomech",
+        "url": "https://github.com/parabiomech"
+      }
+    ]
+  },
+  "education": [
+    {
+      "institution": "Kookmin University",
+      "location": "Seoul, South Korea",
+      "url": "",
+      "area": "Sports Biomechanics",
+      "studyType": "Ph.D. Candidate (ABD)",
+      "startDate": "2020-03-01",
+      "endDate": "2023-08-01",
+      "score": "",
+      "courses": [],
+      "highlights": [
+        "Sports Biomechanics & Sports Engineering Lab"
+      ]
+    },
+    {
+      "institution": "Kookmin University",
+      "location": "Seoul, South Korea",
+      "url": "",
+      "area": "Sports Engineering Convergence",
+      "studyType": "M.S.",
+      "startDate": "2015-03-01",
+      "endDate": "2017-02-01",
+      "score": "",
+      "courses": [],
+      "highlights": [
+        "Sports Biomechanics & Sports Engineering Lab"
+      ]
+    },
+    {
+      "institution": "Youngin University",
+      "location": "Yongin, South Korea",
+      "url": "",
+      "area": "Adapted Physical Education",
+      "studyType": "B.S.",
+      "startDate": "2011-03-01",
+      "endDate": "2015-02-01",
+      "score": "",
+      "courses": [],
+      "highlights": []
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Assistive Technology Engineer (보조공학사)",
+      "date": "",
+      "issuer": "",
+      "icon": "fa-solid fa-certificate"
+    },
+    {
+      "name": "Teacher Certificate (교원자격증)",
+      "date": "",
+      "issuer": "",
+      "icon": "fa-solid fa-chalkboard-teacher"
+    }
+  ],
+  "work": [
+    {
+      "name": "Korea Institute of Sport Science (KISS)",
+      "position": "Researcher",
+      "location": "Seoul, South Korea",
+      "startDate": "2023-08-01",
+      "endDate": "2026-03-01",
+      "summary": "Sports Biomechanics & Performance Analysis Team, Sports Science Research Center",
+      "highlights": [
+        "Paralympic high-performance athletes' performance analysis and prediction",
+        "Para-sports biomechanical analysis",
+        "Para-sports technology development and support"
+      ]
+    },
+    {
+      "name": "Kookmin University",
+      "position": "Research Assistant",
+      "location": "Seoul, South Korea",
+      "startDate": "2020-03-01",
+      "endDate": "2023-08-01",
+      "summary": "Sports Biomechanics & Sports Engineering Lab",
+      "highlights": [
+        "Biomechanical data extraction, processing, and analysis",
+        "Motion capture and functional assessment projects",
+        "Sports-IT convergence projects"
+      ]
+    }
+  ],
+  "volunteer": [],
+  "projects": [
+    {
+      "name": "Biomechanics Measurement & Analysis Service",
+      "summary": "SK Wyverns Co., Ltd. | Kookmin University",
+      "startDate": "2020-02-01",
+      "endDate": "2020-11-01",
+      "highlights": []
+    },
+    {
+      "name": "Smart Electronic Judging System for Practical Taekwondo Competition",
+      "summary": "Ministry of Culture, Sports and Tourism | Kookmin University",
+      "startDate": "2020-06-01",
+      "endDate": "2021-01-01",
+      "highlights": []
+    },
+    {
+      "name": "Biomechanical Running/Gait Posture Analysis for Hearable Coaching & Body Age Evaluation Device",
+      "summary": "Ministry of Culture, Sports and Tourism | Kookmin University",
+      "startDate": "2020-07-01",
+      "endDate": "2020-12-01",
+      "highlights": []
+    },
+    {
+      "name": "2020 Basic Sports (Athletics, Swimming, Gymnastics) Video Analysis Support",
+      "summary": "Ministry of Culture, Sports and Tourism | Kookmin University",
+      "startDate": "2020-10-01",
+      "endDate": "2021-02-01",
+      "highlights": []
+    },
+    {
+      "name": "Smart Insole Parameter Extraction & Motion Analysis Algorithm Development",
+      "summary": "Solted Co., Ltd. | Kookmin University",
+      "startDate": "2021-01-01",
+      "endDate": "2021-10-01",
+      "highlights": []
+    },
+    {
+      "name": "Smart Electronic Judging System for Practical Taekwondo Competition (2nd Year)",
+      "summary": "Ministry of Culture, Sports and Tourism | Kookmin University",
+      "startDate": "2021-02-01",
+      "endDate": "2022-01-01",
+      "highlights": []
+    },
+    {
+      "name": "Modular Smart Fashion Platform Research Center (Phase 3, 2/2)",
+      "summary": "Ministry of Science and ICT | Kookmin University",
+      "startDate": "2021-03-01",
+      "endDate": "2022-02-01",
+      "highlights": []
+    },
+    {
+      "name": "Interactive Healthcare Smart Wear & Service Platform with Integrated Motion Analysis (1st Year)",
+      "summary": "Ministry of Trade, Industry and Energy | Kookmin University",
+      "startDate": "2021-04-01",
+      "endDate": "2021-12-01",
+      "highlights": []
+    },
+    {
+      "name": "Rehabilitation & Leisure Sports Linked Exercise Data Analysis and Verification Support (Phase 1, 1/2)",
+      "summary": "Ministry of Science and ICT | Kookmin University",
+      "startDate": "2021-04-01",
+      "endDate": "2021-08-01",
+      "highlights": []
+    },
+    {
+      "name": "Sports Sock Functionality Test Protocol Development",
+      "summary": "Ministry of Education | Kookmin University",
+      "startDate": "2021-06-01",
+      "endDate": "2021-12-01",
+      "highlights": []
+    },
+    {
+      "name": "Smart Clothing Technology-based Motion Analysis & Exercise Estimation for Fitness Program Contents (1/4)",
+      "summary": "Ministry of Education | Kookmin University",
+      "startDate": "2021-09-01",
+      "endDate": "2022-03-01",
+      "highlights": []
+    },
+    {
+      "name": "Rehabilitation & Leisure Sports Linked Exercise Data Analysis and Verification Support (Phase 1, 2/2)",
+      "summary": "Ministry of Science and ICT | Kookmin University",
+      "startDate": "2022-02-01",
+      "endDate": "2022-08-01",
+      "highlights": []
+    },
+    {
+      "name": "Interactive Healthcare Smart Wear & Service Platform with Integrated Motion Analysis (2nd Year)",
+      "summary": "Ministry of Trade, Industry and Energy | Kookmin University",
+      "startDate": "2022-02-01",
+      "endDate": "2022-08-01",
+      "highlights": []
+    },
+    {
+      "name": "Effect of Mediaid Assist Gear on Upper Limb Motion and Lumbar EMG During Heavy Box Lifting",
+      "summary": "Industry Partner | Kookmin University",
+      "startDate": "2022-04-01",
+      "endDate": "2022-05-01",
+      "highlights": []
+    }
+  ],
+  "publications": [
+    {
+      "name": "Gender Differences in Postural Stability of Individuals with Intellectual Disabilities: A Static Balance Assessment (A Pilot Study)",
+      "publisher": "Korean Journal of Applied Biomechanics",
+      "releaseDate": "2025-03-31",
+      "url": "https://doi.org/10.5103/KJAB.2025.35.1.40",
+      "summary": "KCI | Vol. 35(1), pp.40-48 | ISSN: 1226-2226",
+      "authors": "I.P. Hong, J. Yoo, B.K. Choi, T. Kim, H.R. Jung, G. Kim, S. Kim, K.H. Han, D. Kim",
+      "role": "Co-author"
+    },
+    {
+      "name": "Effects of a Core Exercise Program on the Biomechanical Variables of Gait in Children with Intellectual Disability",
+      "publisher": "The Korea Journal of Sport",
+      "releaseDate": "2025-09-01",
+      "url": "https://www.earticle.net/Article/A473476",
+      "summary": "KCI | Vol. 23(3), pp.311-320 | pISSN: 1738-3250",
+      "authors": "E.H. Kwak, S.Y. Lee, H.R. Jung",
+      "role": "Co-author"
+    },
+    {
+      "name": "Method of Analyzing Important Variables using Machine Learning-based Golf Putting Direction Prediction Model",
+      "publisher": "Korean Journal of Applied Biomechanics",
+      "releaseDate": "2022-03-31",
+      "url": "http://dx.doi.org/10.5103/KJSB.2022.32.1.1",
+      "summary": "KCI | Vol. 32(1), pp.1-8 | ISSN: 1226-2226",
+      "authors": "Y.H. Kim, S.H. Cho, H.R. Jung, K.K. Lee",
+      "role": "Co-author"
+    },
+    {
+      "name": "The strategy of force production to control of amount of spin in preparation motion for vertical jump aerial twist movement",
+      "publisher": "Korean Journal of Sport Science",
+      "releaseDate": "2022-02-01",
+      "url": "https://doi.org/10.35159/kjss.2022.2.31.1.871",
+      "summary": "KCI | Vol. 31(1), pp.871-879",
+      "authors": "W.J. Lee, H.R. Jung, S.J. Kong, S.G. Yoo, K.K. Lee",
+      "role": "Co-author"
+    },
+    {
+      "name": "Three dimensional motion capture data during repetitive overarm throwing practice",
+      "publisher": "Scientific Data",
+      "releaseDate": "2018-12-04",
+      "url": "https://doi.org/10.1038/sdata.2018.272",
+      "summary": "SCIE | IF: 5.929 | Vol. 5, p.180272 | ISSN: 2052-4463",
+      "authors": "G. Ozkaya, H.R. Jung, I.S. Jeong, M.R. Choi, M.Y. Shin, X. Lin, W.S. Heo, M.S. Kim, E.H. Kim, K.K. Lee",
+      "role": "Co-author"
+    },
+    {
+      "name": "Relationship between the Ball Velocity and Upper Extremity Kinematic Variables during an Overarm Throwing Task of Inexperienced Individuals",
+      "publisher": "Korean Journal of Sports Biomechanics",
+      "releaseDate": "2017-03-22",
+      "url": "https://koreascience.or.kr/article/JAKO201715147251877.page",
+      "summary": "KCI | Vol. 27(1), pp.19-23 | ISSN: 1226-2226",
+      "authors": "G. Ozkaya, H.R. Jung, I.S. Jeong, M.R. Choi, M.Y. Shin, X. Lin, W.S. Heo, M.S. Kim, K.K. Lee",
+      "role": "Co-author"
+    },
+    {
+      "name": "Effect of the beat on Nanta player's motion",
+      "publisher": "The Official Journal of the Korean Academy of Kinesiology",
+      "releaseDate": "2016-11-27",
+      "url": "",
+      "summary": "KCI | Vol. 18(4), pp.45-52 | ISSN: 2586-5552",
+      "authors": "M.S. Kim, K.K. Lee, H.R. Jung, Y.S. Jee, K.C. Lim",
+      "role": "Co-author"
+    },
+    {
+      "name": "Glove type and Spatio-Temporal variables of Wheelchair Racer according Paralympic Sports Classification in 100m Sprint",
+      "publisher": "6th International Rehabmove State-of-the-Art Congress",
+      "releaseDate": "2018-11-12",
+      "url": "https://zenodo.org/record/1483722",
+      "summary": "Proceeding | ISBN: 978-90-75823-93-6",
+      "authors": "H.R. Jung, K.K. Lee",
+      "role": "First author"
+    },
+    {
+      "name": "Paralympic Sports Classification and Spatio-Temporal parameter of Wheelchair Racer in Male's 100m Sprint",
+      "publisher": "6th International Rehabmove State-of-the-Art Congress",
+      "releaseDate": "2018-11-12",
+      "url": "https://zenodo.org/record/1482816",
+      "summary": "Proceeding | ISBN: 978-90-75823-93-6",
+      "authors": "H.R. Jung, N.R. Kang",
+      "role": "First author"
+    },
+    {
+      "name": "Posture Stability According to Arch Height Using Depth Camera",
+      "publisher": "29th 88 Seoul Olympic Anniversary International Sports Science Congress",
+      "releaseDate": "2017-06-01",
+      "url": "",
+      "summary": "Proceeding | pp.242",
+      "authors": "M.Y. Shin, K.K. Lee, H.R. Jung, M.R. Choi",
+      "role": "Co-author"
+    },
+    {
+      "name": "The laterality for right handed and left handed in rhythmic bimanual coordination",
+      "publisher": "7th Asia Conference on Kinesiology",
+      "releaseDate": "2016-12-13",
+      "url": "",
+      "summary": "Proceeding | pp.108-109",
+      "authors": "H.R. Jung, S.J. Kim, K.K. Lee",
+      "role": "First author"
+    },
+    {
+      "name": "Qualitative comparison of Disc movement and Inter joint coordination of upper limb in Flying Disc Forehand throwing",
+      "publisher": "34th International Conference on Biomechanics in Sports",
+      "releaseDate": "2016-07-18",
+      "url": "https://ojs.ub.uni-konstanz.de/cpa/article/view/6903",
+      "summary": "Proceeding | 2016",
+      "authors": "H.R. Jung, K.K. Lee, S.J. Kim, M.R. Choi, J.H. Lee",
+      "role": "First author"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Hardware",
+      "level": "",
+      "icon": "fa-solid fa-microchip",
+      "keywords": [
+        "3D Motion Capture System",
+        "EMG (Electromyography)",
+        "Pressure Measurement System",
+        "Force Plate",
+        "IMU/GPS System",
+        "Sports Video Analysis System"
+      ]
+    },
+    {
+      "name": "Software",
+      "level": "",
+      "icon": "fa-solid fa-code",
+      "keywords": [
+        "Python",
+        "MATLAB (Data Processing, Statistical Analysis, Visualization)",
+        "OpenCV",
+        "Unity",
+        "Biomechanics Analysis Software"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Korean",
+      "fluency": "Native speaker",
+      "icon": ""
+    },
+    {
+      "language": "English",
+      "fluency": "Professional working proficiency",
+      "icon": ""
+    }
+  ],
+  "interests": [
+    {
+      "name": "Adaptive Sports",
+      "icon": "fa-solid fa-wheelchair",
+      "keywords": [
+        "Paralympic Sports",
+        "Wheelchair Sports",
+        "Assistive Technology"
+      ]
+    }
+  ],
+  "awards": [],
+  "references": [
+    {
+      "name": "Available upon request",
+      "icon": "fa-solid fa-envelope",
+      "reference": ""
+    }
+  ]
+}
