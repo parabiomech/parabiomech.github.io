@@ -79,29 +79,44 @@
   ],
   "work": [
     {
-      "name": "Korea Institute of Sport Science (KISS)",
+      "position": "XR Developer",
+      "name": "MTVS / Spatial X",
+      "location": "",
+      "startDate": "",
+      "endDate": "",
+      "summary": "Spatial X – XR Content for Disability Awareness through Spatial Perception Technology",
+      "highlights": [
+        "Developed immersive XR content for disability awareness using **Unity and C#**.",
+        "Designed interactive experiences incorporating **spatial audio, spatial perception, and user interaction**.",
+        "Implemented XR-based training and assessment features to provide users with an experiential understanding of sensory and spatial challenges."
+      ]
+    },
+    {
       "position": "Researcher",
+      "name": "Korea Institute of Sport Science (KISS)",
       "location": "Seoul, South Korea",
       "startDate": "2023-08-01",
       "endDate": "2026-03-01",
       "summary": "Sports Biomechanics & Performance Analysis Team, Sports Science Research Center",
       "highlights": [
-        "Paralympic high-performance athletes' performance analysis and prediction",
-        "Para-sports biomechanical analysis",
-        "Para-sports technology development and support"
+        "Conducted **performance analysis and performance prediction** for elite Paralympic athletes.",
+        "Performed biomechanical analyses across multiple para-sports to support athlete performance and coaching.",
+        "Developed and applied **sports science technologies and data-driven solutions** for Paralympic training and competition.",
+        "Supported field-based performance monitoring, biomechanical assessment, and technology implementation for national-level para-athletes."
       ]
     },
     {
-      "name": "Kookmin University",
       "position": "Research Assistant",
+      "name": "Kookmin University",
       "location": "Seoul, South Korea",
       "startDate": "2020-03-01",
       "endDate": "2023-08-01",
-      "summary": "Sports Biomechanics & Sports Engineering Lab",
+      "summary": "Sports Biomechanics & Sports Engineering Laboratory",
       "highlights": [
-        "Biomechanical data extraction, processing, and analysis",
-        "Motion capture and functional assessment projects",
-        "Sports-IT convergence projects"
+        "Collected, processed, and analyzed **biomechanical and human movement data**.",
+        "Conducted **motion capture, functional assessment, and sports performance analysis** projects.",
+        "Participated in **sports engineering and Sports-IT convergence research**, integrating biomechanics with sensing and digital technologies.",
+        "Supported experimental design, data acquisition, signal processing, and quantitative analysis for human movement research."
       ]
     }
   ],
@@ -271,6 +286,16 @@
       "role": "Co-author"
     },
     {
+      "name": "Peak Performance Age in Parasports: Kaplan-Meier Survival Curves",
+      "publisher": "VISTA 2025, International Paralympic Committee (IPC)",
+      "releaseDate": "",
+      "url": "https://www.herl.pitt.edu/vista-2025",
+      "summary": "Conference submission | Submitted | Conference held online May 18-28, 2026",
+      "authors": "",
+      "role": "",
+      "type": "conference"
+    },
+    {
       "name": "Glove type and Spatio-Temporal variables of Wheelchair Racer according Paralympic Sports Classification in 100m Sprint",
       "publisher": "6th International Rehabmove State-of-the-Art Congress",
       "releaseDate": "2018-11-12",
@@ -335,6 +360,7 @@
       "level": "",
       "icon": "fa-solid fa-code",
       "keywords": [
+        "C#",
         "Python",
         "MATLAB (Data Processing, Statistical Analysis, Visualization)",
         "OpenCV",

@@ -9,6 +9,8 @@
 """
 import json
 from fpdf import FPDF
+from pathlib import Path
+import shutil
 
 
 # ============================================================================
@@ -117,9 +119,15 @@ class CVPDF(FPDF):
         # 제목(굵게) + 날짜(오른쪽 정렬)를 같은 줄에 배치
         self.set_font("TimesNR", "B", 10)
         title_w = self.w - self.l_margin - self.r_margin - 50  # 날짜 영역 50mm 확보
-        self.cell(title_w, 5, title, ln=False)
+        if self.will_page_break(20):
+            self.add_page()
+        start_y = self.get_y()
+        self.multi_cell(title_w, 5, title, new_x="LMARGIN", new_y="NEXT", align="L")
+        end_y = self.get_y()
+        self.set_xy(self.w - self.r_margin - 50, start_y)
         self.set_font("TimesNR", "", 9)
         self.cell(50, 5, date_str, ln=True, align="R")
+        self.set_xy(self.l_margin, end_y)
 
         # 기관명 + 위치 (예: "국민대학교, 서울")
         if subtitle or location:
@@ -142,7 +150,7 @@ class CVPDF(FPDF):
             for h in highlights:
                 self.set_x(self.l_margin + 4)        # 들여쓰기
                 self.cell(4, 4.5, chr(8226), ln=False)  # ? 불릿 문자
-                self.multi_cell(0, 4.5, f" {h}")
+                self.multi_cell(0, 4.5, f" {h}", markdown=True)
 
         self.ln(2)  # 항목 간 여백
 
@@ -182,6 +190,8 @@ def format_date_range(start, end):
         parts = d.split("-")
         return f"{parts[0]}.{parts[1]}" if len(parts) >= 2 else parts[0]
 
+    if not start and not end:
+        return ""
     s = fmt(start)
     if not end:
         e = "Present"  # 종료일이 없으면 '현재'
@@ -236,14 +246,16 @@ if data.get("publications"):
     pdf.section_title("Publications")
 
     # --- Journal Papers (SCIE / KCI) ---
-    journals = [p for p in data["publications"] if "Proceeding" not in p.get("summary", "")]
-    proceedings = [p for p in data["publications"] if "Proceeding" in p.get("summary", "")]
+    journals = [p for p in data["publications"] if "Proceeding" not in p.get("summary", "") and p.get("type") != "conference"]
+    proceedings = [p for p in data["publications"] if "Proceeding" in p.get("summary", "") or p.get("type") == "conference"]
 
     if journals:
         pdf.set_font("TimesNR", "B", 10)
         pdf.cell(0, 6, "Journal Papers", ln=True)
         pdf.ln(1)
         for idx, pub in enumerate(journals, 1):
+            if pdf.will_page_break(32):
+                pdf.add_page()
             pdf.set_font("TimesNR", "", 9)
             # 번호
             num_str = f"{idx}. "
@@ -277,7 +289,7 @@ if data.get("publications"):
             # 저널명, 날짜, 상세정보
             pdf.set_x(pdf.l_margin + 2 + pdf.get_string_width(num_str))
             pdf.set_font("TimesNR", "", 9)
-            detail = f'{pub["publisher"]}, {pub.get("releaseDate", "")[:4]}'
+            detail = pub["publisher"] + (f", {pub['releaseDate'][:4]}" if pub.get("releaseDate") else "")
             summary = pub.get("summary", "")
             if summary:
                 detail += f' | {summary}'
@@ -298,9 +310,11 @@ if data.get("publications"):
     # --- Conference Proceedings ---
     if proceedings:
         pdf.set_font("TimesNR", "B", 10)
-        pdf.cell(0, 6, "Conference Proceedings", ln=True)
+        pdf.cell(0, 6, "Conference Papers & Submissions", ln=True)
         pdf.ln(1)
         for idx, pub in enumerate(proceedings, 1):
+            if pdf.will_page_break(32):
+                pdf.add_page()
             pdf.set_font("TimesNR", "", 9)
             num_str = f"{idx}. "
             pdf.set_x(pdf.l_margin + 2)
@@ -330,7 +344,7 @@ if data.get("publications"):
             # 학회명, 날짜, 상세정보
             pdf.set_x(pdf.l_margin + 2 + pdf.get_string_width(num_str))
             pdf.set_font("TimesNR", "", 9)
-            detail = f'{pub["publisher"]}, {pub.get("releaseDate", "")[:4]}'
+            detail = pub["publisher"] + (f", {pub['releaseDate'][:4]}" if pub.get("releaseDate") else "")
             summary = pub.get("summary", "")
             if summary:
                 detail += f' | {summary}'
@@ -384,4 +398,5 @@ if data.get("skills"):
 # ============================================================================
 output_path = "cv_HaeryunJung.pdf"
 pdf.output(output_path)
+shutil.copy2(output_path, "assets/pdf/cv_HaeryunJung.pdf")
 print(f"CV PDF 생성 완료: {output_path}")

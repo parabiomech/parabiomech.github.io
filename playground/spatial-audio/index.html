@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,"><title>360° Spatial Audio Lab | Haeryun Jung</title><link rel="stylesheet" href="lab.css?v=3d-1">
+<script type="importmap">{"imports":{"three":"./vendor/three.module.js","three/addons/":"./vendor/","@sparkjsdev/spark":"./vendor/spark.module.js"}}</script>
+<script src="lab.js?v=3d-1" defer></script><script type="module" src="scene3d.js?v=3d-1"></script></head>
+<body><main>
+<nav><a href="/playground/">← Playground</a><span>PARABIOMECH / EXPERIMENT 01</span></nav>
+<header><p class="eyebrow">GOALBALL · SOUND LOCALIZATION</p><h1>어디서 들리나요<span>360° Spatial Audio Lab</span></h1><p>소리에 집중하고, 방향을 찾아보세요. 수평면에서 나만의 반응 프로파일을 확인합니다.</p></header>
+<section class="panel setup"><div><h2>01 / 준비</h2><p>헤드폰을 착용하고 낮은 음량부터 시작하세요. 실제 골볼 녹음 대신 합성 벨 소리를 사용합니다.</p></div><div class="settings">
+<label>시행 수<select id="count"><option value="12">12회 · 방향별 1회</option><option value="24" selected>24회 · 방향별 2회</option><option value="36">36회 · 방향별 3회</option></select></label>
+<label>음량<input id="volume" type="range" min="0" max="0.5" step="0.01" value="0.15"></label>
+<label class="check"><input id="dark" type="checkbox"> 소리만 듣기 (시행 중 암전)</label>
+<button id="check">헤드폰 확인 · 왼쪽 → 오른쪽</button><button id="start" class="primary">테스트 시작</button>
+</div></section>
+<section class="panel arena" id="arena" tabindex="0" aria-label="소리 방향 테스트. 왼쪽 오른쪽 화살표로 회전, 스페이스로 응답, Escape로 종료.">
+<div class="section-head"><h2>02 / 방향 찾기</h2><span id="progress">READY</span></div>
+<div id="view3d"><canvas id="scene" aria-label="실제 경기장 3차원 공간. 마우스로 드래그해서 둘러보세요."></canvas><div class="view-hud"><span id="view-status">경기장 로딩 준비…</span><span class="crosshair">+</span><span id="view-tip">드래그로 둘러보기 · ← → 회전</span></div><button id="leave-fullscreen" hidden>전체화면 종료</button></div>
+<div class="actions view-actions"><button id="immersive">몰입 모드 · 전체화면</button><button id="home-view">시점 초기화</button><label class="check"><input id="show-ball" type="checkbox" checked> 둘러보기에서 공 표시</label><span id="xr-control"></span></div>
+<div class="heading">바라보는 방향 <strong id="heading">000°</strong></div>
+<p id="status" role="status">← → 회전 · Space 선택 · Esc 종료. 시작할 때 앞쪽은 0°입니다.</p>
+<div class="actions"><button id="left" aria-label="왼쪽으로 5도 회전">← 회전</button><button id="answer">Space · 선택</button><button id="right" aria-label="오른쪽으로 5도 회전">회전 →</button><button id="stop" disabled>종료 / 결과</button></div>
+</section>
+<section class="panel"><h2>Spatial X · 실제 경기장</h2><p>SOG 경기장 스캔과 FBX 골볼을 같은 3차원 공간에 배치했습니다. 테스트 중에는 공을 숨겨 소리 방향이 화면에 드러나지 않습니다.</p><details><summary>공간 배치 조정 / 다른 PLY 보기</summary><div class="settings"><label>경기장 크기<input id="stadium-scale" type="range" min="0.1" max="5" step="0.01" value="2.59"></label><label>경기장 높이<input id="stadium-height" type="range" min="-10" max="10" step="0.05" value="2.29"></label><label>경기장 회전<input id="stadium-yaw" type="range" min="-180" max="180" step="1" value="89"></label><label>상하 뒤집기<input id="stadium-flip" type="checkbox" checked></label><label>PLY 불러오기<input id="ply" type="file" accept=".ply"></label><label>위쪽 축<select id="up"><option value="z">Z-up</option><option value="y">Y-up</option></select></label><button id="clear">경기장으로 복귀</button></div></details><p id="space-info">splat_2949001.sog · ballO6.fbx · 시각적 공간 참조 (반사·잔향 시뮬레이션 없음)</p></section>
+<section class="panel" id="results"><div class="section-head"><h2>03 / 수평면 프로파일</h2><button id="download" disabled>CSV 다운로드</button></div><p id="summary">테스트 후 결과가 표시됩니다.</p><div class="plots"><div><h3>방향 오차</h3><canvas id="accuracy" width="420" height="420"></canvas><p>초록 0° → 빨강 180° · 작을수록 정확</p></div><div><h3>반응시간</h3><canvas id="reaction" width="420" height="420"></canvas><p>밝음 0초 → 진함 최대 관측값 · 작을수록 빠름</p></div></div><p>0° 앞 · 90° 오른쪽 · 180° 뒤 · 270° 왼쪽. 회색은 미측정 방향입니다. 적중 기준: 방향 오차 ≤ 15°. 반응시간은 소리 시작부터 선택까지이며 회전 시간도 포함합니다.</p><div class="table-wrap"><table><thead><tr><th>방향</th><th>횟수</th><th>평균 오차</th><th>적중률</th><th>평균 반응시간</th></tr></thead><tbody id="bins"></tbody></table></div></section>
+<footer>탐색용 공간음향 데모입니다. 청력의 임상 평가나 검증된 청능검사가 아닙니다. 브라우저 HRTF와 헤드폰에 따라 앞뒤 구분 및 지연이 달라집니다.</footer>
+</main><div id="blackout" hidden><button id="exit-dark">Esc · 테스트 종료</button></div></body></html>
+
+
